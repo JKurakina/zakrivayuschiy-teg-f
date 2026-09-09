@@ -1,16 +1,48 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--font-main);
+  font-variation-settings: 'wght' var(--font-weight-main);
+  font-size: 18px;
+  background-color: #e7e7e7;
+  background-image: var(--page-bg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #000;
+}
+
+.box {
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-block: 100px;
+}
+
+.header__inner {
+  inline-size: var(--content-width);
+  padding-block: var(--header-padding-block);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.header__logo,
+.header__subtitle {
+  font-family: var(--font-accent);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.header__logo {
+  font-size: var(--logo-size);
+}
+
+.header__subtitle {
+  font-size: var(--subtitle-size);
 }
