@@ -46,3 +46,104 @@
 .header__subtitle {
   font-size: var(--subtitle-size);
 }
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-block-end: 100px;
+  padding-inline: 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  inline-size: var(--content-width);
+}
+
+.card__title {
+  font-variation-settings: 'wght' var(--font-weight-title);
+  font-size: 18px;
+  padding: 4px 10px;
+}
+
+.card__media {
+  position: relative;
+  overflow: hidden;
+  border-block: 2px solid var(--color-border);
+}
+
+.card__image {
+  display: block;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__label {
+  position: absolute;
+  inset-block-start: 25px;
+  inset-inline-end: 25px;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow:
+    -1px 0 var(--color-text-stroke),
+    0 1px var(--color-text-stroke),
+    1px 0 var(--color-text-stroke),
+    0 -1px var(--color-text-stroke);
+}
+
+@supports ((text-stroke: 1px #fff) or (-webkit-text-stroke: 1px #fff)) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--color-text-stroke);
+    text-stroke: 1px var(--color-text-stroke);
+    text-shadow: none;
+  }
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px;
+  line-height: 1.2;
+}
+
+.card__actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__icon-button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 2px solid transparent;
+  background: var(--color-surface);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border-color: var(--color-border);
+}
+
+.like-icon {
+  transform-origin: center;
+}
+
+.card__like-button {
+  min-inline-size: 130px;
+  padding: 10px 18px 6px;
+}
