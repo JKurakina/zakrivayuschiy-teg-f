@@ -148,4 +148,15 @@
   padding: 10px 18px 6px;
 }
 
-/* лейбл поверх картинки */
+/* пробую через float, вроде так проще... */
+.card__actions {
+  display: block;
+}
+
+.card__icon-button {
+  float: left;
+}
+
+.card__like-button {
+  float: right;
+}
