@@ -259,5 +259,12 @@
       </form>
     </dialog>
     <script src="./scripts/like.js"></script>
+    <script>
+      const dialog = document.querySelector('#save-dialog');
+      const openBtn = document.querySelector('#save-button');
+      if (dialog && openBtn) {
+        openBtn.addEventListener('click', () => dialog.showModal());
+      }
+    </script>
   </body>
 </html>
