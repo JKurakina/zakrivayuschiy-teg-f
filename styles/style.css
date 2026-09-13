@@ -147,20 +147,3 @@
   min-inline-size: 130px;
   padding: 10px 18px 6px;
 }
-
-.popup {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.popup[hidden] {
-  display: none;
-}
-
-.popup__inner {
-  padding: 30px;
-}

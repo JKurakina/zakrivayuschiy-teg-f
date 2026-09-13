@@ -245,24 +245,6 @@
         </button>
       </div>
     </main>
-    <div class="popup" id="save-popup" hidden>
-      <div class="popup__inner box">
-        <p>Вставьте дискету, чтобы продолжить</p>
-        <button type="button" id="popup-ok">OK</button>
-      </div>
-    </div>
     <script src="./scripts/like.js"></script>
-    <script>
-      // пока так, потом разберусь
-      const popup = document.querySelector('#save-popup');
-      const openBtn = document.querySelector('#save-button');
-      const okBtn = document.querySelector('#popup-ok');
-      if (openBtn && popup) {
-        openBtn.addEventListener('click', () => { popup.hidden = false; });
-      }
-      if (okBtn && popup) {
-        okBtn.addEventListener('click', () => { popup.hidden = true; });
-      }
-    </script>
   </body>
 </html>
