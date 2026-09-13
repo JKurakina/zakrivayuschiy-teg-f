@@ -147,16 +147,3 @@
   min-inline-size: 130px;
   padding: 10px 18px 6px;
 }
-
-/* пробую через float, вроде так проще... */
-.card__actions {
-  display: block;
-}
-
-.card__icon-button {
-  float: left;
-}
-
-.card__like-button {
-  float: right;
-}
