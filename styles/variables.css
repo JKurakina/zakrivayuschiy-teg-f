@@ -24,3 +24,9 @@
   --subtitle-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-padding-block: clamp(7.5rem, 7.3864rem + 0.7512vw, 8.0625rem);
 }
+@media (width <= 375px) {
+  :root {
+    --save-gap: 12px;
+    --save-icon-size: 28px;
+  }
+}
