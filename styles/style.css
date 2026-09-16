@@ -268,3 +268,5 @@
     block-size: var(--save-icon-size, 28px);
   }
 }
+
+.save { inline-size: var(--content-width); display:flex; justify-content:center; padding: 25px; }
