@@ -269,4 +269,13 @@
   }
 }
 
-.save { inline-size: var(--content-width); display:flex; justify-content:center; padding: 25px; }
+.save {
+  inline-size: var(--content-width);
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.card__body p + p {
+  margin: 0;
+}
