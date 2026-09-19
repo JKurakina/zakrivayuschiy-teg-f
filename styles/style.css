@@ -139,7 +139,7 @@
   border-color: var(--color-border);
 }
 
-.like-icon {
+.like-icon .heart {
   transform-origin: center;
 }
 
