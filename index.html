@@ -240,16 +240,16 @@
         </button>
       </div>
     </main>
-    <dialog class="modal box" id="save-dialog">
+    <dialog class="modal box" id="save-dialog" aria-labelledby="dialog-title">
       <form class="modal__form" method="dialog">
         <div class="modal__content">
           <svg class="modal__icon" viewBox="0 0 39 39" aria-hidden="true">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+          <p class="modal__text" id="dialog-title">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="button modal__button" type="submit">
-          <span class="button__text">OK</span>
+        <button class="button modal__button" type="submit" autofocus>
+          <span class="button__text">ОК</span>
         </button>
       </form>
     </dialog>
