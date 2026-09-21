@@ -147,13 +147,13 @@
   min-inline-size: 130px;
   padding: 10px 18px 6px;
 }
-.card__image--blank { filter: saturate(0.35) brightness(0.95); }
-.card__image--doubt { filter: saturate(1.8) brightness(1.1); }
-.card__image--ideal { filter: hue-rotate(35deg); }
-.card__image--near { filter: invert(0.15) hue-rotate(20deg); }
-.card__image--bypass { filter: sepia(0.8) contrast(1.05); }
-.card__image--focus { filter: grayscale(1) blur(1.5px); }
-.card__image--here { filter: hue-rotate(90deg) contrast(1.2) saturate(0.85); }
+.filter-saturate { filter: saturate(0.35) brightness(0.95); }
+.filter-saturate-high { filter: saturate(1.8) brightness(1.1); }
+.filter-hue { filter: hue-rotate(35deg); }
+.filter-invert { filter: invert(0.15) hue-rotate(20deg); }
+.filter-sepia { filter: sepia(0.8) contrast(1.05); }
+.filter-blur { filter: grayscale(1) blur(1.5px); }
+.filter-hue-contrast { filter: hue-rotate(90deg) contrast(1.2) saturate(0.85); }
 .button {
   position: relative;
   overflow: hidden;
@@ -184,6 +184,7 @@
 
 .button:hover::before {
   transform: translateX(0);
+  text-transform: uppercase;
 }
 
 .button__text {
@@ -191,6 +192,7 @@
   z-index: 1;
   color: var(--color-button-text);
   mix-blend-mode: difference;
+  text-transform: uppercase;
 }
 
 .save-button {
