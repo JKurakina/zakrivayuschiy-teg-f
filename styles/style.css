@@ -192,7 +192,7 @@
   z-index: 1;
   color: var(--color-button-text);
   mix-blend-mode: difference;
-  text-transform: uppercase;
+  
 }
 
 .save-button {
